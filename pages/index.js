@@ -7,7 +7,7 @@ const DUMMY_MEETUPS = [
     image:
       "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Stadtbild_M%C3%BCnchen.jpg/1280px-Stadtbild_M%C3%BCnchen.jpg",
     address: "Gali number 2, Powder Gali GokulDham",
-    description: 'This is a first meetup'
+    description: "This is a first meetup",
   },
   {
     id: "m2",
@@ -15,7 +15,7 @@ const DUMMY_MEETUPS = [
     image:
       "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Stadtbild_M%C3%BCnchen.jpg/1280px-Stadtbild_M%C3%BCnchen.jpg",
     address: "Gali number 4, Powder Gali GokulDham",
-    description: 'This is a first meetup'
+    description: "This is a first meetup",
   },
   {
     id: "m3",
@@ -23,12 +23,14 @@ const DUMMY_MEETUPS = [
     image:
       "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Stadtbild_M%C3%BCnchen.jpg/1280px-Stadtbild_M%C3%BCnchen.jpg",
     address: "Gali number 2, Powder Gali GokulDham",
-    description: 'This is a first meetup'
+    description: "This is a first meetup",
   },
 ];
 
 function HomePage() {
-  return <MeetupList meetups={DUMMY_MEETUPS} />;
+  return (
+      <MeetupList meetups={DUMMY_MEETUPS} />
+  );
 }
 
 export default HomePage;
