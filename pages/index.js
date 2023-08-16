@@ -1,3 +1,4 @@
+import Head from "next/head";
 import MeetupList from "../components/meetups/MeetupList";
 import { MongoClient } from "mongodb";
 
@@ -29,7 +30,14 @@ const DUMMY_MEETUPS = [
 ];
 
 function HomePage(props) {
-  return <MeetupList meetups={props.meetups} />;
+  return (
+    <>
+      <Head>
+        <title>React Meetups</title>
+      </Head>
+      <MeetupList meetups={props.meetups} />;
+    </>
+  );
 }
 
 // export async function getServerSideProps(context) {
@@ -69,4 +77,3 @@ export async function getStaticProps() {
 }
 
 export default HomePage;
-  
