@@ -19,4 +19,4 @@ async function handler(req, res) {
   }
 }
 
-export default handler();
+export default handler;
